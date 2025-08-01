@@ -43,6 +43,9 @@ header{
     display: none;
 }
 
+
+/*----------------Iniciando a parte principal do design-----------------------*/
+
 .secao-inicial{
     display: flex;
     align-items: center;
@@ -96,3 +99,139 @@ header{
 .texto-imagem img{
     width: 15%;
 }
+
+/*------------------------*/
+
+.secao-oqueFornecemos{
+    padding-top: 89px;
+    background-color: #FAF8F4;
+}
+
+.secao-oqueFornecemos h1{
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+    letter-spacing: -3px;
+    display: flex;
+    margin: 24px;
+}
+
+.secao-oqueFornecemos .sobre-home{
+    padding-top: 53px;
+    margin: 24px;
+}
+
+.sobre-home h2{
+    font-size: 24px;
+    letter-spacing: -2px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    padding-top: 12px;
+    width: 75%;
+}
+
+.sobre-home p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.sobre-home .nowrap {
+    white-space: nowrap;
+  }
+
+  .sobre-home .link-home{
+    display: inline-block;
+    padding-top: 24px;
+    color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+  }
+
+  .sobre-home .link-home img{
+    margin-left: 11px;
+  }
+  
+/*-----*/
+
+
+.secao-oqueFornecemos .sobre-cartao{
+    padding-top: 53px;
+    margin: 24px;
+}
+
+.sobre-cartao h2{
+    font-size: 24px;
+    letter-spacing: -2px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    padding-top: 12px;
+    width: 75%;
+}
+
+.sobre-cartao p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.sobre-cartao .nowrap {
+    white-space: nowrap;
+  }
+
+  .sobre-cartao .link-cartao{
+    display: inline-block;
+    padding-top: 24px;
+    color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+  }
+
+  .sobre-cartao .link-cartao img{
+    margin-left: 11px;
+  }
+/*--------*/
+
+.secao-oqueFornecemos .sobre-joia{
+    padding-top: 53px;
+    margin: 24px;
+}
+
+.sobre-joia h2{
+    font-size: 24px;
+    letter-spacing: -2px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    padding-top: 12px;
+    width: 75%;
+}
+
+.sobre-joia p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.sobre-joia .nowrap {
+    white-space: nowrap;
+  }
+
+  .sobre-joia .link-joia{
+    display: inline-block;
+    padding-top: 24px;
+    color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+  }
+
+  .sobre-joia .link-joia img{
+    margin-left: 11px;
+  }
+
+
