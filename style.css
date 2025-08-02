@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --cor-primaria: #F16F4F;
     --cor-secundaria: #0F3141;
     --fonte-principal: 'Poppins', sans-serif;
     --font-secundaria: 'Inter', sans-serif;
+    --font-terciaria: 'Raleway';
 }
 
 *{
@@ -105,6 +107,7 @@ header{
 .secao-oqueFornecemos{
     padding-top: 89px;
     background-color: #FAF8F4;
+    margin-bottom: 80px;
 }
 
 .secao-oqueFornecemos h1{
@@ -194,7 +197,12 @@ header{
   .sobre-cartao .link-cartao img{
     margin-left: 11px;
   }
+
+
 /*--------*/
+.secao-oqueFornecemos{
+    height: 130vh;
+}
 
 .secao-oqueFornecemos .sobre-joia{
     padding-top: 53px;
@@ -234,4 +242,80 @@ header{
     margin-left: 11px;
   }
 
+  /*---------------- Inicia a categoria dos produtos---------------*/
 
+  .produtos h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    font-family: var(--fonte-principal);
+    width: 236px;
+    
+  }
+
+  .produtos{
+    display: flex;
+    align-items: last baseline;
+    margin: 24px;
+  }
+
+
+
+  .cartoes-moveis{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    justify-items: center;
+    gap: 0.6rem;
+  }
+
+.cartao{
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+  .cartao .descricao{
+    font-family: var(--font-terciaria);
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    margin-top: 8px;
+    font-weight: 400;
+  }
+
+  .cartao .nome-produto{
+    font-family: var(--font-terciaria);
+    font-size: 16px;
+    color: var(--cor-secundaria);
+  }
+
+  .cartao .dimensoes{
+    font-family: var(--font-terciaria);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.cartao .preco{
+    color: var(--cor-primaria);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1;
+    font-family: var(--font-terciaria);
+    }
+
+.cartao .imagem{
+    width: 100%;
+    background-color: rgb(171, 171, 224);
+    display: flex;
+    justify-content: center;
+    height: 208px;
+    border-radius: 8px;
+}
+
+.cartao .imagem img{
+    margin: 0rem 1rem;
+    width: 60%;
+}
