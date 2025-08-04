@@ -5,9 +5,9 @@
 :root{
     --cor-primaria: #F16F4F;
     --cor-secundaria: #0F3141;
-    --fonte-principal: 'Poppins', sans-serif;
-    --font-secundaria: 'Inter', sans-serif;
-    --font-terciaria: 'Raleway';
+    --fonte-poppins: 'Poppins', sans-serif;
+    --fonte-inter: 'Inter', sans-serif;
+    --fonte-raleway: 'Raleway';
 }
 
 *{
@@ -50,7 +50,8 @@ header{
 
 .secao-inicial{
     display: flex;
-    align-items: center;
+    align-items: start;
+    margin-top: 4rem;
     justify-content: center;
     position: relative;
     text-align: center;
@@ -73,7 +74,7 @@ header{
 
 .secao-inicial h1{
     font-size: 44px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     font-weight: 600;
     display: flex;
     
@@ -82,7 +83,7 @@ header{
 .secao-inicial p{
     color: var(--cor-secundaria);
     font-size: 14px;
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-inter);
 }
 
 .secao-inicial button{
@@ -96,6 +97,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .texto-imagem img{
@@ -108,11 +110,14 @@ header{
     padding-top: 89px;
     background-color: #FAF8F4;
     margin-bottom: 80px;
+    background-image:url(img/textura-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top 50% left 30%;
 }
 
 .secao-oqueFornecemos h1{
     font-weight: 600;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     font-size: 40px;
     letter-spacing: -3px;
     display: flex;
@@ -127,7 +132,7 @@ header{
 .sobre-home h2{
     font-size: 24px;
     letter-spacing: -2px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
     width: 75%;
@@ -136,7 +141,7 @@ header{
 .sobre-home p{
     margin-top: 16px;
     font-size: 16px;
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-inter);
     font-weight: 400;
     opacity: 50%;
 }
@@ -168,7 +173,7 @@ header{
 .sobre-cartao h2{
     font-size: 24px;
     letter-spacing: -2px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
     width: 75%;
@@ -177,7 +182,7 @@ header{
 .sobre-cartao p{
     margin-top: 16px;
     font-size: 16px;
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-inter);
     font-weight: 400;
     opacity: 50%;
 }
@@ -200,9 +205,6 @@ header{
 
 
 /*--------*/
-.secao-oqueFornecemos{
-    height: 130vh;
-}
 
 .secao-oqueFornecemos .sobre-joia{
     padding-top: 53px;
@@ -212,7 +214,7 @@ header{
 .sobre-joia h2{
     font-size: 24px;
     letter-spacing: -2px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
     width: 75%;
@@ -221,7 +223,7 @@ header{
 .sobre-joia p{
     margin-top: 16px;
     font-size: 16px;
-    font-family: var(--font-secundaria);
+    font-family: var(--fonte-inter);
     font-weight: 400;
     opacity: 50%;
 }
@@ -236,6 +238,7 @@ header{
     color: var(--cor-primaria);
     display: flex;
     align-items: center;
+    padding-bottom: 3rem;
   }
 
   .sobre-joia .link-joia img{
@@ -244,11 +247,16 @@ header{
 
   /*---------------- Inicia a categoria dos produtos---------------*/
 
+  .produtos-venda{
+    margin-bottom: 1.5rem;
+  }
+
+
   .produtos h1{
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -3px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-poppins);
     width: 236px;
     
   }
@@ -276,7 +284,7 @@ header{
 
 }
   .cartao .descricao{
-    font-family: var(--font-terciaria);
+    font-family: var(--fonte-raleway);
     font-size: 14px;
     letter-spacing: 1px;
     opacity: 0.5;
@@ -285,13 +293,13 @@ header{
   }
 
   .cartao .nome-produto{
-    font-family: var(--font-terciaria);
+    font-family: var(--fonte-raleway);
     font-size: 16px;
     color: var(--cor-secundaria);
   }
 
   .cartao .dimensoes{
-    font-family: var(--font-terciaria);
+    font-family: var(--fonte-raleway);
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -303,7 +311,7 @@ header{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1;
-    font-family: var(--font-terciaria);
+    font-family: var(--fonte-raleway);
     }
 
 .cartao .imagem{
@@ -318,4 +326,211 @@ header{
 .cartao .imagem img{
     margin: 0rem 1rem;
     width: 60%;
+}
+
+#cartao1 .imagem{
+    background-color: #F8F4F2;
+}
+#cartao2 .imagem{
+    background-color: #E3E7E8;
+}
+#cartao3 .imagem{
+    background-color: #E2EBE0;
+}
+#cartao4 .imagem{
+    background-color: #E8E8E3;
+}
+#cartao5 .imagem{
+    background-color: #F5E7D6;
+}
+#cartao6 .imagem{
+    background-color: #EBE5E0;
+}
+
+/*------------------------------*/
+
+.projetos-concluidos{
+    background-color: var(--cor-secundaria);
+    color: white;
+    height: 820px;
+}
+.titulo-projetos{
+    padding-top: 1rem;
+}
+
+.titulo-projetos h1{
+    font-family: var(--fonte-poppins);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    width: 50%;
+    margin: 24px;
+    margin-top: 45px;
+}
+
+.cartoes-projetos{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    justify-items: center;
+    margin: 24px;
+    gap: 1rem 0.3rem; 
+}
+
+.cartoes-projetos h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--fonte-poppins);
+}
+
+.cartoes-projetos p{
+    font-size: 12px;
+    font-family: var(--fonte-raleway);
+    color: #C2C2C2;
+    width: 9.5rem;
+}
+
+/*--------------------------------------*/
+
+.produto-novo{
+    position: relative;
+}
+
+.produto-novo .imagem-principal{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-novos-produtos{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.conteudo-novos-produtos{
+    margin-top: 5.5rem;
+    margin-left: 29px;
+}
+
+.conteudo-novos-produtos h3{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-poppins);
+    font-weight: 600;
+      font-size: 20px;
+}
+
+#sofa h1{ 
+    margin-top: 20px;
+    font-family: var(--fonte-poppins);
+    font-weight: 600;
+    font-size: 40px !important;
+}
+
+.conteudo-texto{
+    font-family: var(--fonte-inter);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+    width: 90%;
+}
+
+.avaliar-cores p{
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--fonte-raleway);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.avaliar-cores{
+    margin-bottom: 4.4rem;
+}
+
+.produto-novo button{
+     width: 168px;
+     height: 56px;
+    background-color: var(--cor-primaria);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*-------------------------*/
+
+.feedback-clientes .titulo-feedback{
+    margin-top: 4.5rem;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-evenly;
+}
+
+
+.titulo-feedback h1{
+    font-family: var(--fonte-poppins);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.conteudo-feedback{
+    background-color: #FAF8F4;
+    width: 90%;
+    border-radius: 16px;
+    margin: 20px;
+    background-image: url(img/1.png);
+    background-repeat: no-repeat;
+    background-position: top 100% left 100%;
+    padding-bottom: 1.8rem;
+}
+
+.conteudo-feedback .imagem-mulher{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-feedback .aspas{
+    margin: 24px;
+}
+
+.texto-feedback{
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.texto-feedback h1{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-poppins);
+    font-size: 18px;
+    font-weight: 600;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.texto-feedback p{
+    width: 271px;
+    color: #78756E;
+    font-family: var(--fonte-inter);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.texto-feedback h2{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: var(--fonte-poppins);
+    font-weight: 600;
+    opacity: 0.7;
+    color: #565554;
 }
