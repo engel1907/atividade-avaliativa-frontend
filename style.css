@@ -61,7 +61,12 @@ a{
     display: block;
     width: 100%;
     height: auto;
-    
+}
+
+.secao-inicial .imagem-principal{
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
 }
 
 .secao-inicial .texto-imagem{
@@ -70,6 +75,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .secao-inicial h1{
@@ -352,7 +358,6 @@ a{
 .projetos-concluidos{
     background-color: var(--cor-secundaria);
     color: white;
-    height: 820px;
 }
 .titulo-projetos{
     padding-top: 1rem;
@@ -391,13 +396,20 @@ a{
     width: 9.5rem;
 }
 
+.seta-carrosel{
+    display: none;
+}
+
 /*--------------------------------------*/
 
 .produto-novo{
     position: relative;
 }
+.imagem-sofa-desktop{
+    display: none;
+}
 
-.produto-novo .imagem-principal{
+.produto-novo .imagem-produto-novo{
     display: block;
     width: 100%;
     height: auto;
@@ -666,6 +678,8 @@ footer{
 }
 
  @media (min-width: 1024px){
+
+
     .menu-desktop{
         display: flex;
         flex-direction: row;
@@ -719,6 +733,236 @@ footer{
         font-weight: bold;
     }
 
+    .header-container{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
+    /*---------------------*/
+
+    .secao-inicial{
+        margin-top: 0;
+        
+    }
+    .secao-inicial .imagem-principal{
+        height: auto; 
+        object-fit: unset; 
+        object-position: initial;
+        max-height: 722px;
+    }
+
+    .secao-inicial .texto-imagem{
+        margin-top: 5rem;
+    }
+
+    .texto-imagem p{
+        font-size: 18px;
+    }
+    
+    .texto-imagem h1{
+        font-size: 88px;
+        width: 70%;
+    }
+
+    .secao-oqueFornecemos h1{
+        font-size: 60px;
+        margin-left: 6.5rem;
+    }
+    .secao-oqueFornecemos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sobre-oqFornecemos{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        margin-left: 5rem;
+        gap: 4rem;
+    }
+
+
+    .sobre-cartao, .sobre-joia{
+        width: 22%;
+        font-size: 18px;
+    }
+
+    .sobre-home{
+        width: 21%;
+    }
+
+    .secao-oqueFornecemos{
+    background-color: #FAF8F4;
+    background-image:url(img/fundo-desktop.png);
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+
+    .produtos-venda{
+        padding-top: 0.7rem;
+        padding-bottom: 5rem;
+    }
+    .produtos{
+        margin: 80px;
+    }
+    .produtos h1{
+        width: 100%;
+        font-size: 60px;
+        letter-spacing: -3px;
+        font-weight: 600;
+    }
+
+    #cartao6{
+        display: none;
+    }
+
+    .cartoes-moveis{
+        display: flex;
+        flex-direction: row;
+    }
+    .cartoes-moveis img{
+        width: 176px;
+        height: 176px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cartoes-moveis .imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projetos-concluidos{
+        background-color: #0F3141;
+        padding-bottom: 6rem;
+    }
+
+    .projetos-concluidos h1{
+        font-size: 60px;
+        margin: 5.5rem;
+    }
+
+    .cartoes-projetos img{
+        display: flex;
+        justify-content: start;
+    }
+
+    .cartoes-projetos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+    }
+
+    .cartao-projeto h3{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .cartao-projeto p{
+        margin-top: 10px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #projeto-sala h3{
+        color: #F07454;
+    }
+
+    #projeto-banheiro{
+        display: none;
+    }
+
+    .seta-carrosel{
+        position: absolute;
+        display: initial;
+        right: -25px;
+    }
+
+     .imagem-produto-novo{
+        display: none !important;
+    }   
+
+    .imagem-sofa-desktop{
+        display: initial;
+    }
+
+    .conteudo-novos-produtos{
+        margin-left: 5rem;
+    }
+
+    #sofa h1{
+        font-size: 60px !important;
+    }
+
+    .conteudo-novos-produtos p{
+        font-size: 18px;
+        width: 70%;
+    }
+
+    /*--------------------------*/
+
+.feedback-clientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+    .conteudo-feedback{
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+    .conteudo-feedback .img{
+        width: 100%;
+        height: auto;
+        display: initial;
+    }
+
+    .imagem-mulher{
+        padding-left: 1rem;
+    }
+
+    .texto-feedback{
+        width: 80%;
+    }
+
+    .texto-feedback h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .texto-feedback p{
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .titulo-feedback{
+        width: 100%;
+
+    }
+
+     .titulo-feedback h1{ 
+        width: 100%;
+        font-size: 60px;
+        letter-spacing: -3px;
+        font-weight: 600;
+    }
+   
+
+    
+
+
+    
 
  }
