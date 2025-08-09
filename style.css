@@ -684,6 +684,9 @@ footer{
     padding-bottom: 3rem;
 }
 
+.footer-mobile { display: block; }
+.footer-desktop { display: none; }
+
  @media (min-width: 1024px){
 
 
@@ -1018,8 +1021,30 @@ footer{
         font-size: 20px;
     }
     
+    /*--------------------------*/
 
-   
+    .footer-desktop{
+        display: block;
+    }
+    .footer-mobile{
+        display: none;
+    }
+
+    .secao-links{
+        display: flex;
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    .link-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-footer a{
+        text-decoration: none;
+       color: white;
+    }
 
 
 
