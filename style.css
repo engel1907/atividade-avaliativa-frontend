@@ -477,12 +477,13 @@ a{
 
 /*-------------------------*/
 
-.feedback-clientes .titulo-feedback{
+ .titulo-feedback{
     margin-top: 4.5rem;
     display: flex;
-    align-items: last baseline;
+    align-items: center;
     justify-content: space-evenly;
 }
+
 
 
 .titulo-feedback h1{
@@ -598,6 +599,12 @@ background-color: #F5F6F8;
     color: black;
 }
 
+.imagens-comodos{
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+}
 .botao-link{
     display: flex;
     align-items: baseline;
@@ -910,6 +917,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
 }
 
 
@@ -918,7 +926,7 @@ footer{
         width: 55%;
         display: flex;
         flex-direction: row;
-        
+        margin-bottom: 5rem;
     }
 
 
@@ -929,11 +937,12 @@ footer{
     }
 
     .imagem-mulher{
-        padding-left: 1rem;
+        width: 100%;
+        object-fit: cover;
     }
 
     .texto-feedback{
-        width: 80%;
+        width: 100%;
     }
 
     .texto-feedback h1{
@@ -948,8 +957,8 @@ footer{
     }
 
     .titulo-feedback{
-        width: 100%;
-
+        display: flex;
+        width: 90%;
     }
 
      .titulo-feedback h1{ 
@@ -960,9 +969,58 @@ footer{
     }
    
 
+    /*--------------------------*/
+
+    .detalhes {
+    height: 100%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    background-image: 
+    url('./img/comodos.png'),      
+    url('./img/fundo-desk.png');  
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right ,  -380px 295px;
+    background-size: auto, contain; 
+    background-size: auto, 1000px;
+    padding-bottom: 14.5rem;
+}
+
+    .imagens-comodos{
+    display: none;
+    }
+    
+    .conteudo-detalhes{
+    margin-left: 6rem;
+    }
+
+    .conteudo-detalhes h1{  
+        font-size: 60px;
+        width: 50%;
+    }
+
+    .conteudo-detalhes p{
+        text-align: justify;
+        width: 55%;
+        letter-spacing: 1px;
+        font-size: 20px;
+        opacity: 0.8;
+        margin-bottom: 4rem;
+    }
+   
+
+    .botao-link{
+        gap: 1.5rem;
+    }
+
+    .botao-link a{
+        font-size: 20px;
+    }
     
 
+   
 
-    
+
 
  }
