@@ -331,7 +331,8 @@ a{
 
 .cartao .imagem img{
     margin: 0rem 1rem;
-    width: 60%;
+    width: 100%;
+    object-fit: contain;
 }
 
 #cartao1 .imagem{
@@ -358,6 +359,7 @@ a{
 .projetos-concluidos{
     background-color: var(--cor-secundaria);
     color: white;
+    padding-bottom: 2rem;
 }
 .titulo-projetos{
     padding-top: 1rem;
@@ -395,6 +397,8 @@ a{
     color: #C2C2C2;
     width: 9.5rem;
 }
+
+
 
 .seta-carrosel{
     display: none;
@@ -1023,8 +1027,12 @@ footer{
     
     /*--------------------------*/
 
+    .logo-footer{
+        width: 40%;
+    }
     .footer-desktop{
         display: block;
+        margin-left: 4rem;
     }
     .footer-mobile{
         display: none;
@@ -1034,18 +1042,58 @@ footer{
         display: flex;
         flex-direction: row;
         gap: 8rem;
+        margin-left: 8rem;
+        margin-top: 4rem;
+    }
+
+    .secao-links a{
+        font-family: var(--fonte-inter);
+        font-size: 14px;
+    }
+
+    .secao-links h1{
+        font-family: var(--fonte-poppins);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
     }
 
     .link-footer{
         display: flex;
         flex-direction: column;
+         gap: 1.5rem;
     }
 
     .link-footer a{
-        text-decoration: none;
-       color: white;
+    text-decoration: none;
+      color: #B7C1C6;
+    }
+
+    .info-footer{
+        width: 40%;
+    }
+    
+    .container1-footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .mapa-pin h3{
+        margin: 0;
     }
 
 
+    .mapa-pin p{
+        font-family: var(--fonte-inter);
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 2.5rem;
+    }
+
+    .email h3{
+        margin: 0;
+    }
+
+    .texto-footer{
+    }
 
  }
