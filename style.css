@@ -113,6 +113,7 @@ a{
 /*------------------------*/
 
 .secao-oqueFornecemos{
+    padding-bottom: 4rem;
     padding-top: 89px;
     background-color: #FAF8F4;
     margin-bottom: 80px;
@@ -137,11 +138,10 @@ a{
 
 .sobre-home h2{
     font-size: 24px;
-    letter-spacing: -2px;
     font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
-    width: 75%;
+    width: 90%;
 }
 
 .sobre-home p{
@@ -178,11 +178,10 @@ a{
 
 .sobre-cartao h2{
     font-size: 24px;
-    letter-spacing: -2px;
     font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
-    width: 75%;
+    width: 90%;
 }
 
 .sobre-cartao p{
@@ -219,11 +218,10 @@ a{
 
 .sobre-joia h2{
     font-size: 24px;
-    letter-spacing: -2px;
     font-family: var(--fonte-poppins);
     font-weight: 600;
     padding-top: 12px;
-    width: 75%;
+    width: 90%;
 }
 
 .sobre-joia p{
@@ -385,6 +383,7 @@ a{
     gap: 1rem 0.3rem; 
 }
 
+
 .cartoes-projetos h3{
     font-size: 16px;
     font-weight: 600;
@@ -397,8 +396,9 @@ a{
     color: #C2C2C2;
     width: 9.5rem;
 }
-
-
+#projeto-banheiro img{
+    max-width: 100%;
+}
 
 .seta-carrosel{
     display: none;
@@ -691,6 +691,17 @@ footer{
 .footer-mobile { display: block; }
 .footer-desktop { display: none; }
 
+
+
+
+
+
+
+
+
+
+
+/*=======================Inicia o desktop=================================*/
  @media (min-width: 1024px){
 
 
@@ -796,18 +807,22 @@ footer{
     }
 
 
-    .sobre-cartao, .sobre-joia{
-        width: 22%;
+    .sobre-joia{
+    width: 24%;
+    font-size: 18px;
+    }
+    .sobre-cartao{
+        width: 23%;
         font-size: 18px;
     }
 
     .sobre-home{
-        width: 21%;
+        width: 23%;
     }
 
     .secao-oqueFornecemos{
     background-color: #FAF8F4;
-    background-image:url(img/fundo-desktop.png);
+    background-image:url(img/fundo-fornecemos.png);
     background-repeat: no-repeat;
     background-position:  center;
 }
@@ -870,6 +885,7 @@ footer{
         position: relative;
         gap: 2rem;
     }
+
 
     .cartao-projeto h3{
         margin-top: 20px;
@@ -1071,6 +1087,7 @@ footer{
 
     .info-footer{
         width: 40%;
+        margin-top: 3rem;
     }
     
     .container1-footer{
@@ -1090,10 +1107,54 @@ footer{
     }
 
     .email h3{
+        font-family: var(--fonte-inter);
+        font-size: 16px;
         margin: 0;
     }
 
+    .email p{
+        font-family: var(--fonte-inter);
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 2rem;
+    }
+
     .texto-footer{
+        margin-top: 4rem;
+    }
+
+    .final-footer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #265267;
+        width: 90%;
+    }
+    .final-footer p{
+        display: flex;
+        justify-self: center;
+        font-family: var(--fonte-inter);
+        font-size: 12px;
+        font-weight: 600;
+        color: #75919E;
+    }
+
+    .final-footer h4{
+        font-family: var(--fonte-inter);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .consideracoes-finais{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .redes-sociais{
+        margin-right: 1.1rem;
     }
 
  }
