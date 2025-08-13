@@ -110,7 +110,10 @@ a{
     width: 15%;
 }
 
-/*------------------------*/
+
+
+
+/*--------Iniciando a parte de serviços que a empresa realiza--------*/
 
 .secao-oqueFornecemos{
     padding-bottom: 4rem;
@@ -119,7 +122,7 @@ a{
     margin-bottom: 80px;
     background-image:url(img/textura-mobile.png);
     background-repeat: no-repeat;
-    background-position: top 60% left 30%;
+    background-position: top 52% left 30%;
 }
 
 .secao-oqueFornecemos h1{
@@ -352,7 +355,11 @@ a{
     background-color: #EBE5E0;
 }
 
-/*------------------------------*/
+
+
+
+
+/*---------Iniciando a parte de projetos já concluídos-----------*/
 
 .projetos-concluidos{
     background-color: var(--cor-secundaria);
@@ -371,6 +378,7 @@ a{
     width: 50%;
     margin: 24px;
     margin-top: 45px;
+    margin-bottom: 3rem;
 }
 
 .cartoes-projetos{
@@ -380,7 +388,7 @@ a{
     width: 90%;
     justify-items: center;
     margin: 24px;
-    gap: 1rem 0.3rem; 
+    gap: 1rem 0.5rem; 
 }
 
 
@@ -404,7 +412,10 @@ a{
     display: none;
 }
 
-/*--------------------------------------*/
+
+
+
+/*---------Iniciando a parte de produtos novos------------*/
 
 .produto-novo{
     position: relative;
@@ -479,7 +490,10 @@ a{
     align-items: center;
 }
 
-/*-------------------------*/
+
+
+
+/*-------Iniciando a parte de feedback----------*/
 
  .titulo-feedback{
     margin-top: 4.5rem;
@@ -508,16 +522,26 @@ a{
     background-repeat: no-repeat;
     background-position: top 100% left 100%;
     padding-bottom: 1.8rem;
-}
-
-.conteudo-feedback .imagem-mulher{
-    padding-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+.conteudo-feedback .imagem-mulher{
+    width: 45%;
+    padding-top: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.conteudo-feedback .imagem-mulher img{
+   border-radius: 16px;
+}
+
+
 .conteudo-feedback .aspas{
-    margin: 24px;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .texto-feedback{
@@ -531,7 +555,7 @@ a{
     font-family: var(--fonte-poppins);
     font-size: 18px;
     font-weight: 600;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -552,7 +576,10 @@ a{
     color: #565554;
 }
 
-/*------------------------------*/
+
+
+
+/*--------Iniciando a parte de detalhes--------------*/
 
 .detalhes{
 margin-top: 3.5rem;
@@ -615,7 +642,9 @@ background-color: #F5F6F8;
     margin-bottom: 2rem;
 }
 
-/*----------------------*/
+
+
+/*-------Iniciando o footer mobile-----------*/
 
 footer{
     background-color: var(--cor-secundaria);
@@ -695,12 +724,6 @@ footer{
 
 
 
-
-
-
-
-
-
 /*=======================Inicia o desktop=================================*/
  @media (min-width: 1024px){
 
@@ -763,7 +786,7 @@ footer{
         margin-bottom: 0;
     }
 
-    /*---------------------*/
+    /*-------Iniciando a seção inicial com a imagem e outras informações-------*/
 
     .secao-inicial{
         margin-top: 0;
@@ -788,6 +811,9 @@ footer{
         font-size: 88px;
         width: 70%;
     }
+
+
+     /*-------Iniciando a seção sobre serviços prestados-------*/
 
     .secao-oqueFornecemos h1{
         font-size: 60px;
@@ -827,6 +853,10 @@ footer{
     background-position:  center;
 }
 
+
+
+ /*-------Iniciando a seção dos produtos que estão disponíveis para venda-------*/
+
     .produtos-venda{
         padding-top: 0.7rem;
         padding-bottom: 5rem;
@@ -861,6 +891,8 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+     /*-------Iniciando a seção de projetos concluídos-------*/
 
     .projetos-concluidos{
         background-color: #0F3141;
@@ -912,6 +944,9 @@ footer{
         right: -25px;
     }
 
+
+    /*-------Iniciando a seção de novos produtos-------*/
+
      .imagem-produto-novo{
         display: none !important;
     }   
@@ -933,7 +968,7 @@ footer{
         width: 70%;
     }
 
-    /*--------------------------*/
+     /*-------Iniciando a seção de feedback dos clientes------*/
 
 .feedback-clientes{
     display: flex;
@@ -992,7 +1027,7 @@ footer{
     }
    
 
-    /*--------------------------*/
+     /*-------Iniciando a seção de detalhes-------*/
 
     .detalhes {
     height: 100%;
@@ -1041,7 +1076,7 @@ footer{
         font-size: 20px;
     }
     
-    /*--------------------------*/
+    /*-------Iniciando o footer desktop----------*/
 
     .logo-footer{
         width: 40%;
