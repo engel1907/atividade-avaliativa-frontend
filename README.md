@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Informações do Projeto
 - **Aluno:** Matheus Engel  
-- **Professor:** Kristian  
+- **Professor:**Kristian Erdmann  
 - **Disciplina:** Desenvolvimento Web (HTML e CSS)  
 
 ---
